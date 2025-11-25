@@ -1,0 +1,2 @@
+- [x] Add clear: both; to .mapa-container in principal.css to make the h3 appear above the map instead of beside the horario div.
+- [x] Test the site by opening index.html to verify the layout fix.

@@ -1,0 +1,262 @@
+body {
+  font-family: Arial, sans-serif; /* todos os texto estão em ARIAL */
+  margin: 0; 
+  padding: 0; 
+  background-color: #f4f4f4; /* cor de fundo está branco */
+  color: #333; /* cor da fonte está escuro */
+}
+
+header {
+  background: linear-gradient(45deg, #ae6027, #a37b5e); /* a cor de fundo tá com gradiante com a cor ae6027, a37b5e */
+  background-color: #ae6027; /* Marrom elegante para cabeleireiro */
+  color: white; /* cor da fonte está branco */
+  padding: 16px; /* a altura está com 15cap */
+  text-align: center; /* os texto está centralizado */
+  overflow: hidden;
+}
+
+.head {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  overflow: hidden;
+  font-size: 50px; /* o tamanho dos texto está 50px */
+  background: linear-gradient(45deg, #ae6027, #a37b5e);
+  background-color: linear-gradient(45deg, #ae6027, #a37b5e);
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none; /* o estilo da lista está vazia */
+  padding: 0;
+  display: flex;
+  justify-content: center; /* o conteudo justificado está centralizado */
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 1rem; /* o margin esta com 1rem */
+}
+
+nav ul li a {
+  color: white; /* cor da fonte está branco */
+  text-decoration: none; /* os textos está sem decoração */
+  font-weight: bold; /* os textos está em negrito */
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* os textos está com underline */
+}
+
+.hero {
+  background-color: #333; /* Colocando cor de fundo */
+  background-image: url(imagens/salao.png); /*Colocando imagem*/
+  background-size: cover; /* Prechendo a imagem */
+  background-position: center; /* Posição da imagem */
+  height: 200px; /* A altura está 200px */
+  width: 100%; /* A largura está 100 porcento */
+  display: flex; /* display está como flex */
+  align-items: center; /* O alinhamento dos itens está centralizado */
+  justify-content: center; /* os conteudos tá justificado */
+  color: white; /* cor da fonte está branco */
+  text-align: center; /* o alinhamento dos textos tá centralizado */
+}
+
+.hero h1 {
+  font-size: 3rem; /* tamanho da fonte tá 3rem */
+  margin: 0;
+}
+
+section {
+  padding: 2rem;
+  margin: 0;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  color: white; /* a cor da fonte tá branco */
+}
+
+.corte {
+  background-image: url(imagens/corte.png); /* colocando imagem no display de corte */
+  background-size: cover; /* prechendo a imagem */
+  padding: auto;
+  border-radius: 8px; /* a borda está com 8px de suave */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center; /* alinhamento dos textos tá centralizado */
+}
+
+.color {
+  background-image: url(imagens/pintar.png); /* colocando imagem */
+  background-size: cover; /* prechendo imagem */
+  padding: 1rem;
+  border-radius: 8px; /* a suavedez da borda  */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mani {
+  background-image: url(imagens/manicure.png);
+  background-size: cover;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.capilar {
+  background-image: url(imagens/massagem.png);
+  background-size: cover;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input,
+textarea,
+button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+textarea {
+  resize: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+  background-color: #8b4513;
+  color: white;
+  cursor: pointer;
+}
+
+span {
+  font-weight: bold;
+}
+
+.horario {
+  line-height: 0;
+  font-style: italic;
+  float: left;
+  width: 40%;
+}
+
+.mapa-container {
+  clear: both;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.horario p {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  text-align: center;
+}
+
+.marque {
+  text-align: right;
+}
+
+#marque {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding-bottom: 1%;
+  padding-left: 25%;
+}
+
+.horario .dia {
+  flex: 1;
+  text-align: left;
+}
+
+.horario .hora {
+  flex: 1;
+  line-height: 0.5;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+.slide {
+    width: 70%;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.slide img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+/* Oculta slides por padrão */
+#slide1:checked ~ .slides .slide:nth-child(1) { display: block; }
+#slide1:checked ~ .slides .slide:nth-child(2) { display: none; }
+#slide1:checked ~ .slides .slide:nth-child(3) { display: none; }
+#slide2:checked ~ .slides .slide:nth-child(1) { display: none; }
+#slide2:checked ~ .slides .slide:nth-child(2) { display: block; }
+#slide2:checked ~ .slides .slide:nth-child(3) { display: none; }
+#slide3:checked ~ .slides .slide:nth-child(1) { display: none; }
+#slide3:checked ~ .slides .slide:nth-child(2) { display: none; }
+#slide3:checked ~ .slides .slide:nth-child(3) { display: block; }
+/* Estilo dos controles */
+
+/* Destaque para o botão ativo */
+#slide1:checked ~ .controls label[for="slide1"],
+#slide2:checked ~ .controls label[for="slide2"],
+#slide3:checked ~ .controls label[for="slide3"] {
+    background: white;
+}
+
+#navbar {
+  position: sticky;
+  top: -50px;
+  width: 100%;
+  padding: 9px;
+  display: block;
+  transition: top 0.3s;
+  padding-bottom: 1px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  padding-bottom: 0px;
+}
+
+#navbar a:hover {
+  background-color: white;
+  color: #ae6027;
+  padding-bottom: 15px;
+  margin: 0px;
+}

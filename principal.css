@@ -81,31 +81,21 @@ section {
 }
 
 .corte {
+  background-image: url(imagens/corte.png); /* colocando imagem no display de corte */
   background-size: cover; /* prechendo a imagem */
   padding: auto;
   border-radius: 8px; /* a borda está com 8px de suave */
-  background-image: url(imagem/corte.png);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center; /* alinhamento dos textos tá centralizado */
-}
-.corte:hover{
-  cursor: pointer;
-  color: #8b4513;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   size-adjust: 120%;
 }
 
 .color {
-  background-image: url(imagem/pintar.png);
+  background-image: url(imagens/pintar.png); /* colocando imagem */
   background-size: cover; /* prechendo imagem */
   padding: auto;
   border-radius: 8px; /* a suavedez da borda  */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
-.color:hover{
-  cursor: pointer;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   color: #8b4513;
-   size-adjust: 120%;
 }
 
 .mani {
@@ -113,13 +103,8 @@ section {
   background-size: cover;
   padding: auto;
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-}
-.mani:hover{
-  cursor: pointer;
-  color: #8b4513;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   size-adjust: 120%;
 }
 
 .capilar {
@@ -127,14 +112,17 @@ section {
   background-size: cover;
   padding: auto;
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.capilar:hover {
-  cursor: pointer;
+.corte:hover, .color:hover, .mani:hover, .capilar:hover {
   size-adjust: 120%;
   color: #8b4513;
- box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-size: 120%;
+  box-sizing: 120%;
+  border-radius: 12px;
+  padding: 1rem;
 }
 
 form {
@@ -177,6 +165,7 @@ span {
 
 .mapa-container {
   clear: both;
+  margin: 0em;
 }
 
 footer {
@@ -282,6 +271,16 @@ footer {
   margin: 0px;
 }
 
-#sobre {
-  padding-left: 34%;
+.sobre {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.desc {
+  text-align: justify; 
+  max-width: 65%;
+  text-align-last: center;
+  margin: 0 auto;
 }

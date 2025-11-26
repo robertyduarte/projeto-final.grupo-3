@@ -92,7 +92,7 @@ section {
 .color {
   background-image: url(imagens/pintar.png); /* colocando imagem */
   background-size: cover; /* prechendo imagem */
-  padding: 1rem;
+  padding: auto;
   border-radius: 8px; /* a suavedez da borda  */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -101,7 +101,7 @@ section {
 .mani {
   background-image: url(imagens/manicure.png);
   background-size: cover;
-  padding: 1rem;
+  padding: auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -110,10 +110,46 @@ section {
 .capilar {
   background-image: url(imagens/massagem.png);
   background-size: cover;
-  padding: 1rem;
+  padding: auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+.corte:hover {
+  size-adjust: 120%;
+  color: #8b4513;
+  background-size: 120%;
+  box-sizing: 120%;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.color:hover {
+  size-adjust: 120%;
+  color: #8b4513;
+  background-size: 120%;
+  box-sizing: 120%;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.mani:hover {
+  size-adjust: 120%;
+  color: #8b4513;
+  background-size: 120%;
+  box-sizing: 120%;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.capilar:hover {
+  size-adjust: 120%;
+  color: #8b4513;
+  background-size: 120%;
+  box-sizing: 120%;
+  border-radius: 12px;
+  padding: 1rem;
 }
 
 form {

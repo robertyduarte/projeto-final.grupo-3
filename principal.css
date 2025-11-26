@@ -116,34 +116,7 @@ section {
   text-align: center;
 }
 
-.corte:hover {
-  size-adjust: 120%;
-  color: #8b4513;
-  background-size: 120%;
-  box-sizing: 120%;
-  border-radius: 12px;
-  padding: 1rem;
-}
-
-.color:hover {
-  size-adjust: 120%;
-  color: #8b4513;
-  background-size: 120%;
-  box-sizing: 120%;
-  border-radius: 12px;
-  padding: 1rem;
-}
-
-.mani:hover {
-  size-adjust: 120%;
-  color: #8b4513;
-  background-size: 120%;
-  box-sizing: 120%;
-  border-radius: 12px;
-  padding: 1rem;
-}
-
-.capilar:hover {
+.corte:hover, .color:hover, .mani:hover, .capilar:hover {
   size-adjust: 120%;
   color: #8b4513;
   background-size: 120%;

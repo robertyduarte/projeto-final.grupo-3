@@ -164,7 +164,7 @@ span {
 }
 
 .mapa-container {
-  clear: both;
+  clear: none;
   margin: 0em;
 }
 

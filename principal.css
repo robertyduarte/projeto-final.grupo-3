@@ -1,5 +1,5 @@
-.my-soul-regular {
-  font-family: "My Soul", cursive;
+.monsieur-la-doulaise-regular {
+  font-family: "Monsieur La Doulaise", cursive;
   font-weight: 400;
   font-style: normal;
 }
@@ -34,8 +34,16 @@ header {
 }
 
 .head span{
-  font-family: 'My Soul', cursive;
-  font-size: 59px;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: 100px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 nav ul {
@@ -62,7 +70,7 @@ nav ul li a:hover {
 
 .hero {
   background-color: #333; /* Colocando cor de fundo */
-  font-family: 'My Soul', cursive;
+  font-family: "Monsieur La Doulaise", cursive;
   background-image: url(imagens/salao.png); /*Colocando imagem*/
   background-size: cover; /* Prechendo a imagem */
   background-position: center; /* Posição da imagem */
@@ -76,7 +84,7 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-  font-size: 3rem; /* tamanho da fonte tá 3rem */
+  font-size: 5rem; /* tamanho da fonte tá 3rem */
   margin: 0;
 }
 
@@ -329,7 +337,7 @@ footer {
   font-size: xx-large;
   float: right;
   color: #333;
-  font-family: "My Soul", cursive;
+  font-family: "Monsieur La Doulaise", cursive;
   display: inline;
   margin-top: 3px;
   margin-right: 20px;

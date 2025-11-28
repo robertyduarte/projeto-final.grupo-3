@@ -327,8 +327,10 @@ footer {
 @media (min-width: 344px) and (max-width: 1080px){
   body{
     background-color: #333;
+    color: white;
   }
   footer {
     background-color: black;
   }
+  
 }

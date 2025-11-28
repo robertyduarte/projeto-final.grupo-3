@@ -15,10 +15,10 @@ body {
 header {
   background: linear-gradient(45deg, #ae6027, #a37b5e); /* a cor de fundo tá com gradiante com a cor ae6027, a37b5e */
   background-color: #ae6027; /* Marrom elegante para cabeleireiro */
-  color: white; /* cor da fonte está branco */
   padding: 16px; /* a altura está com 15cap */
-  text-align: center; /* os texto está centralizado */
   overflow: hidden;
+  text-align: center; /* os texto está centralizado */
+  color: white; /* cor da fonte está branco */
 }
 
 .head {
@@ -67,7 +67,7 @@ nav ul li a:hover {
   background-size: cover; /* Prechendo a imagem */
   background-position: center; /* Posição da imagem */
   height: 200px; /* A altura está 200px */
-  width: 100%; /* A largura está 100 porcento */
+  width: 95%; /* A largura está 100 porcento */
   display: flex; /* display está como flex */
   align-items: center; /* O alinhamento dos itens está centralizado */
   justify-content: center; /* os conteudos tá justificado */
@@ -82,52 +82,48 @@ nav ul li a:hover {
 
 section {
   padding: 2rem;
-  margin: 0;
+  margin-left: 0px;
 }
 
 .services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-top: 1px;
+  display: flex;
+  grid-template-columns: subgrid (auto-fit, minmax(100px, 1fr));
+  grid-template-columns: none;
   gap: 1rem;
+  margin-left: 32px;
+  margin-right: 32px;
   color: white; /* a cor da fonte tá branco */
+  transition: 0.5s;
+  transition-duration: 0.5s;
 }
 
-.corte {
-  padding: 20px;
-  box-sizing: border-box;
-  background-image: url(imagens/corte.png); /* colocando imagem no display de corte */
+.corte, .color, .mani, .capilar {
   background-size: cover; /* prechendo a imagem */
   padding: auto;
+  width: 30%;
+  height: 150px;
   border-radius: 8px; /* a borda está com 8px de suave */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center; /* alinhamento dos textos tá centralizado */
+  transition: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.corte {
+  background-image: url(imagens/corte.png);
 }
 
 .color {
   background-image: url(imagens/pintar.png); /* colocando imagem */
-  background-size: cover; /* prechendo imagem */
-  padding: auto;
-  border-radius: 8px; /* a suavedez da borda  */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .mani {
   background-image: url(imagens/manicure.png);
-  background-size: cover;
-  padding: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .capilar {
   background-image: url(imagens/massagem.png);
-  background-size: cover;
-  padding: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .corte:hover, .color:hover, .mani:hover, .capilar:hover {
@@ -223,6 +219,7 @@ footer {
   line-height: 0.5;
   text-align: right;
 }
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
@@ -265,14 +262,19 @@ footer {
 }
 
 #navbar {
+  background: linear-gradient(45deg, #ae6027, #a37b5e); /* a cor de fundo tá com gradiante com a cor ae6027, a37b5e */
+  background-color: #ae6027; /* Marrom elegante para cabeleireiro */
+  padding: 8px; /* a altura está com 15cap */
+  overflow: hidden;
   position: sticky;
   top: -50px;
   height: 95px;
-  width: 100%;
-  padding: 9px;
+  width: 99%;
+  padding-right: 5px;
   display: block;
   transition: top 0.3s;
   padding-bottom: 1px;
+  transition-duration: top 0.3s;
 }
 
 #navbar a {
@@ -282,7 +284,7 @@ footer {
   padding: 15px;
   text-decoration: none;
   font-size: 17px;
-  padding-bottom: 0px;
+  padding-bottom: 4px;
 }
 
 #navbar p{
@@ -300,7 +302,7 @@ footer {
   border-radius: 10px;
   color: #ae6027;
   padding-bottom: 15px;
-  margin: 0px;
+  margin: 2px;
   transition: 0.4s;
   box-shadow: 0 0 30px rgba(199, 69, 19, 0.7);
 }

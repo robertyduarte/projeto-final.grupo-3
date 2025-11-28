@@ -1,3 +1,9 @@
+.my-soul-regular {
+  font-family: "My Soul", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   font-family: Arial, sans-serif; /* todos os texto estão em ARIAL */
   margin: 0; 
@@ -27,6 +33,11 @@ header {
   text-align: center;
 }
 
+.head span{
+  font-family: 'My Soul', cursive;
+  font-size: 59px;
+}
+
 nav ul {
   list-style-type: none; /* o estilo da lista está vazia */
   padding: 0;
@@ -51,6 +62,7 @@ nav ul li a:hover {
 
 .hero {
   background-color: #333; /* Colocando cor de fundo */
+  font-family: 'My Soul', cursive;
   background-image: url(imagens/salao.png); /*Colocando imagem*/
   background-size: cover; /* Prechendo a imagem */
   background-position: center; /* Posição da imagem */
@@ -81,6 +93,8 @@ section {
 }
 
 .corte {
+  padding: 20px;
+  box-sizing: border-box;
   background-image: url(imagens/corte.png); /* colocando imagem no display de corte */
   background-size: cover; /* prechendo a imagem */
   padding: auto;
@@ -117,12 +131,16 @@ section {
 }
 
 .corte:hover, .color:hover, .mani:hover, .capilar:hover {
+  cursor: pointer;
   size-adjust: 120%;
   color: #8b4513;
   background-size: 120%;
   box-sizing: 120%;
   border-radius: 12px;
-  padding: 1rem;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(139, 69, 19, 0.5);
+  box-sizing: 120%;
+  transition: 0.5s;
 }
 
 form {
@@ -220,11 +238,13 @@ footer {
     cursor: pointer;
     border-radius: 50%;
 }
+
 .slide img {
     width: 250px;
     height: 250px;
     object-fit: cover;
 }
+
 /* Oculta slides por padrão */
 #slide1:checked ~ .slides .slide:nth-child(1) { display: block; }
 #slide1:checked ~ .slides .slide:nth-child(2) { display: none; }
@@ -247,6 +267,7 @@ footer {
 #navbar {
   position: sticky;
   top: -50px;
+  height: 95px;
   width: 100%;
   padding: 9px;
   display: block;
@@ -264,11 +285,24 @@ footer {
   padding-bottom: 0px;
 }
 
+#navbar p{
+  font-size: xx-large;
+  float: right;
+  color: #333;
+  font-family: "My Soul", cursive;
+  display: inline;
+  margin-top: 3px;
+  margin-right: 20px;
+}
+
 #navbar a:hover {
   background-color: white;
+  border-radius: 10px;
   color: #ae6027;
   padding-bottom: 15px;
   margin: 0px;
+  transition: 0.4s;
+  box-shadow: 0 0 30px rgba(199, 69, 19, 0.7);
 }
 
 .sobre {
@@ -283,4 +317,18 @@ footer {
   max-width: 65%;
   text-align-last: center;
   margin: 0 auto;
+}
+
+.env:hover{
+  box-shadow: 0 0 30px rgba(199, 69, 19, 0.7);
+  transition: 0.3s;
+}
+
+@media (min-width: 344px) and (max-width: 1080px){
+  body{
+    background-color: #333;
+  }
+  footer {
+    background-color: black;
+  }
 }

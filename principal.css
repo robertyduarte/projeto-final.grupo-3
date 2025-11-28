@@ -285,6 +285,8 @@ footer {
   text-decoration: none;
   font-size: 17px;
   padding-bottom: 4px;
+  transition-duration: top 0.4s;
+  transition: 0.4s;
 }
 
 #navbar p{
@@ -295,6 +297,8 @@ footer {
   display: inline;
   margin-top: 3px;
   margin-right: 20px;
+  transition-duration: top 0.4s;
+  transition: 0.4s;
 }
 
 #navbar a:hover {
@@ -305,6 +309,7 @@ footer {
   margin: 2px;
   transition: 0.4s;
   box-shadow: 0 0 30px rgba(199, 69, 19, 0.7);
+  transition-duration: top 0.4s;
 }
 
 .sobre {

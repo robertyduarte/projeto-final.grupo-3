@@ -246,18 +246,54 @@ footer {
 #slide1:checked ~ .slides .slide:nth-child(1) { display: block; }
 #slide1:checked ~ .slides .slide:nth-child(2) { display: none; }
 #slide1:checked ~ .slides .slide:nth-child(3) { display: none; }
+#slide1:checked ~ .slides .slide:nth-child(4) { display: none; }
+#slide1:checked ~ .slides .slide:nth-child(5) { display: none; }
+#slide1:checked ~ .slides .slide:nth-child(6) { display: none; }
+
 #slide2:checked ~ .slides .slide:nth-child(1) { display: none; }
 #slide2:checked ~ .slides .slide:nth-child(2) { display: block; }
 #slide2:checked ~ .slides .slide:nth-child(3) { display: none; }
+#slide2:checked ~ .slides .slide:nth-child(4) { display: none; }
+#slide2:checked ~ .slides .slide:nth-child(5) { display: none; }
+#slide2:checked ~ .slides .slide:nth-child(6) { display: none; }
+
 #slide3:checked ~ .slides .slide:nth-child(1) { display: none; }
 #slide3:checked ~ .slides .slide:nth-child(2) { display: none; }
 #slide3:checked ~ .slides .slide:nth-child(3) { display: block; }
+#slide3:checked ~ .slides .slide:nth-child(4) { display: none; }
+#slide3:checked ~ .slides .slide:nth-child(5) { display: none; }
+#slide3:checked ~ .slides .slide:nth-child(6) { display: none; }
+
+#slide4:checked ~ .slides .slide:nth-child(1) { display: none; }
+#slide4:checked ~ .slides .slide:nth-child(2) { display: none; }
+#slide4:checked ~ .slides .slide:nth-child(3) { display: none; }
+#slide4:checked ~ .slides .slide:nth-child(4) { display: block; }
+#slide4:checked ~ .slides .slide:nth-child(5) { display: none; }
+#slide4:checked ~ .slides .slide:nth-child(6) { display: none; }
+
+#slide5:checked ~ .slides .slide:nth-child(1) { display: none; }
+#slide5:checked ~ .slides .slide:nth-child(2) { display: none; }
+#slide5:checked ~ .slides .slide:nth-child(3) { display: none; }
+#slide5:checked ~ .slides .slide:nth-child(4) { display: none; }
+#slide5:checked ~ .slides .slide:nth-child(5) { display: block; }
+#slide5:checked ~ .slides .slide:nth-child(6) { display: none; }
+
+#slide6:checked ~ .slides .slide:nth-child(1) { display: none; }
+#slide6:checked ~ .slides .slide:nth-child(2) { display: none; }
+#slide6:checked ~ .slides .slide:nth-child(3) { display: none; }
+#slide6:checked ~ .slides .slide:nth-child(4) { display: none; }
+#slide6:checked ~ .slides .slide:nth-child(5) { display: none; }
+#slide6:checked ~ .slides .slide:nth-child(6) { display: block; }
+
 /* Estilo dos controles */
 
 /* Destaque para o botão ativo */
 #slide1:checked ~ .controls label[for="slide1"],
 #slide2:checked ~ .controls label[for="slide2"],
-#slide3:checked ~ .controls label[for="slide3"] {
+#slide3:checked ~ .controls label[for="slide3"],
+#slide4:checked ~ .controls label[for="slide4"],
+#slide5:checked ~ .controls label[for="slide5"],
+#slide6:checked ~ .controls label[for="slide6"] {
     background: white;
 }
 

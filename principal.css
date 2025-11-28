@@ -294,7 +294,7 @@ footer {
 #slide4:checked ~ .controls label[for="slide4"],
 #slide5:checked ~ .controls label[for="slide5"],
 #slide6:checked ~ .controls label[for="slide6"] {
-    background: white;
+  background: white;
 }
 
 #navbar {

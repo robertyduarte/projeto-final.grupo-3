@@ -238,16 +238,18 @@ footer {
 }
 
 .slide {
-    width: 100%;
+    width: 85%;
     flex-shrink: 0;
     cursor: pointer;
     border-radius: 50%;
+    justify-content: center;
 }
 
 .slide img {
     width: 250px;
     height: 250px;
     object-fit: cover;
+    justify-content: center;
 }
 
 /* Oculta slides por padrão */
@@ -321,6 +323,12 @@ footer {
   transition-duration: top 0.3s;
 }
 
+.novo {
+  position: absolute; 
+  left: 0; 
+  bottom: 38px;
+}
+
 #navbar a {
   float: left;
   display: block;
@@ -373,39 +381,4 @@ footer {
 .env:hover{
   box-shadow: 0 0 30px rgba(199, 69, 19, 0.7);
   transition: 0.3s;
-}
-
-@media (min-width: 344px) and (max-width: 1080px){
-  body{
-    background-color: #333;
-    color: white;
-    max-width: 100%;
-    padding-left: 0px;
-    margin-left: 0px;
-  }
-
-  header {
-  background-color: linear-gradient(45deg, #ae6027, #a37b5e);
-  }
-
-  footer {
-    background-color: black;
-    margin: 10px;
-    padding: 10px;
-  }
-  .services {
-    width: 200%;
-  }
-  .horario {
-    width: 100%;
-    margin: 100%;
-  }
-  .slide {
-    width: max-content;
-  }
-    header {grid-area: 1 / span 6;}
-  menu {grid-area: 2 / span 1;}
-  content {grid-area: 2 / span 4;}
-  .capilar, .corte, .color, .mani {grid-area: 2 / span 1;}
-  footer {grid-area: 3 / span 6;}
 }

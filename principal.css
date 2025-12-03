@@ -313,9 +313,9 @@ footer {
   padding: 8px; /* a altura está com 15cap */
   overflow: hidden;
   position: sticky;
-  top: -50px;
-  height: 95px;
-  width: 99%;
+  top: -70px;
+  height: 113px;
+  width: 100%;
   padding-right: 5px;
   display: block;
   transition: top 0.3s;
@@ -326,7 +326,7 @@ footer {
 .novo {
   position: absolute; 
   left: 0; 
-  bottom: 38px;
+  bottom: 57px;
 }
 
 #navbar a {

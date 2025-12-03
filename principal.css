@@ -75,7 +75,6 @@ nav ul li a:hover {
   background-size: cover; /* Prechendo a imagem */
   background-position: center; /* Posição da imagem */
   height: 200px; /* A altura está 200px */
-  width: 95%; /* A largura está 100 porcento */
   display: flex; /* display está como flex */
   align-items: center; /* O alinhamento dos itens está centralizado */
   justify-content: center; /* os conteudos tá justificado */
